@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Guide to Grand Rapids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        .neighborhood-label {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>Joe’s Guide to Grand Rapids</h1>
+    <p>
+        Grand Rapids is a great city, and I've spent the last 3 years living here and learning about it. 
+        There are great restaurants, activities, and bars to find yourself in - but as with all cities, 
+        you may want a guide to point things out. Here, I'd love to do that. Take what you want, and 
+        disagree where you wish - but this is JOE'S guide. I hope you enjoy it as much as I do.
+    </p>
+    <div id="map"></div> <!-- Map container -->
+    <a href="https://github.com">Visit GitHub</a>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([42.9634, -85.6681], 13); // Centered on Grand Rapids
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Create a legend
+        const legend = L.control({ position: 'bottomright' });
+        
+        legend.onAdd = function(map) {
+            const div = L.DomUtil.create('div', 'legend');
+            div.style.backgroundColor = 'white';
+            div.style.padding = '10px';
+            div.style.borderRadius = '5px';
+            div.innerHTML = '<h4>Categories</h4>';
+            return div;
+        };
+
+        // Fetch external data and add pins
+        fetch('places.json') // External JSON file with place data
+            .then(response => response.json())
+            .then(data => {
+                // Add category colors to legend
+                const legendDiv = legend.getContainer();
+                Object.entries(data.categories).forEach(([category, color]) => {
+                    legendDiv.innerHTML += `
+                        <div style="margin: 5px;">
+                            <i style="background: ${color}; width: 15px; height: 15px; display: inline-block; border-radius: 50%;"></i>
+                            <span style="margin-left: 5px;">${category}</span>
+                        </div>`;
+                });
+
+                // Add markers
+                data.places.forEach(place => {
+                    const color = data.categories[place.category];
+                    const markerIcon = L.divIcon({
+                        html: `<div style="background-color: ${color}; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white;"></div>`,
+                        className: 'custom-marker',
+                        iconSize: [16, 16]
+                    });
+
+                    L.marker([place.lat, place.lng], { icon: markerIcon })
+                        .addTo(map)
+                        .bindPopup(`<b>${place.name}</b><br>${place.category}<br>${place.notes}`);
+                });
+            })
+            .catch(error => console.error('Error fetching place data:', error));
+
+        // Add neighborhood polygons
+        fetch('neighborhoods.json')
+            .then(response => response.json())
+            .then(data => {
+                data.neighborhoods.forEach(hood => {
+                    // Convert coordinates array to polygon points
+                    const polygonPoints = hood.coordinates.map(coord => [coord[0], coord[1]]);
+                    
+                    // Create and style the polygon
+                    const polygon = L.polygon(polygonPoints, {
+                        color: hood.color,
+                        fillColor: hood.color,
+                        fillOpacity: hood.opacity,
+                        weight: 2
+                    }).addTo(map);
+
+                    // Add a popup with the neighborhood name
+                    polygon.bindPopup(hood.name);
+                });
+            })
+            .catch(error => console.error('Error loading neighborhoods:', error));
+
+        legend.addTo(map);
+    </script>
+</body>
+</html>

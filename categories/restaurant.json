@@ -1,0 +1,25 @@
+{
+    "color": "#44ff44",
+    "places": [
+        {
+            "name": "The Foolery",
+            "notes": "Detroit style pizza and amazing appetizers. A great place to hang out with friends. Cheap PBRs always.",
+            "address": "10 Ionia Ave NW, Grand Rapids, MI 49503",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available - but it's downtown. Best to walk. ",
+            "lat": 42.9633974,
+            "lng": -85.6701728
+        },
+        {
+            "name": "Barrio",
+            "notes": "A vibrant Mexican restaurant known for its tacos and tequila selection. This place gets packed before events at Van Andel Arena or the GLC",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "lat": 42.9635,
+            "lng": -85.6703,
+            "address": "Brush Studio, 11, Ionia Avenue Northwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+        }
+    ]
+}

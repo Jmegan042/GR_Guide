@@ -1,0 +1,65 @@
+{
+    "color": "#44ffff",
+    "places": [
+        {
+            "name": "Put Putts Bar",
+            "notes": "A typical west-side bar with a relaxed atmosphere and great staff. Two patios (covered and open air) and solid food. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Small parking lot, but it's very close to the bus stop for the laker line.",
+            "address": "1148 Fulton St W, Grand Rapids, MI 49504",
+            "lat": 42.9636724,
+            "lng": -85.6960897
+        },
+        {
+            "name": "Monarchs Corner Bar",
+            "notes": "A popular live music venue with a bar. They host a variety of events and concerts.",
+            "live_music": "Yes",
+            "pool_table": "Yes",
+            "parking": "Small parking lot available, but street parking is also an option.",
+            "address": "646 Stocking Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9752637,
+            "lng": -85.6876246
+        },
+        {
+            "name": "The Pyramid Scheme",
+            "notes": "A live music venue and bar with several pinball machines. They have a variety of events and concerts.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "68 Commerce Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9615652,
+            "lng": -85.6690212
+        },
+        {
+            "name": "House Rules",
+            "notes": "A bar with a relaxed atmosphere, known for its board games and trivia nights. They have a good selection of beers and cocktails.The park across the street is a bit sketchy, but not dangerous.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "404 Ionia Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9557571,
+            "lng": -85.6698911
+        },
+        {
+            "name": "One Burbon",
+            "notes": "A typical bar with a great selection of bourbons and whiskeys. Probably the best selection in the city and fairly affordable for the quality. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "608 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9705559,
+            "lng": -85.6830626
+        },
+        {
+            "name": "Drip Drop Cocktail Room",
+            "notes": "A small coctail bar, known for its unique drinks. It can fill up quickly - or be empty, depending on the night.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "445 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9707363,
+            "lng": -85.680762
+        }
+    ]
+}

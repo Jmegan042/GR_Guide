@@ -1,0 +1,15 @@
+{
+    "color": "#4444ff",
+    "places": [
+        {
+            "name": "Grand Rapids Art Museum",
+            "notes": "A modern art museum with a great collection. They have free admission on Tuesdays.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
+            "lat": 42.9634,
+            "lng": -85.6702,
+            "address": "Residence Inn Grand Rapids Downtown, 40, Louis Street Northwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+        }
+    ]
+}

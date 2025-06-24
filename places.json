@@ -1,0 +1,132 @@
+{
+    "categories": {
+        "Attraction": "#ff44ff",
+        "Bar": "#44ffff",
+        "Brewery": "#ff4444",
+        "Museum": "#4444ff",
+        "Restaurant": "#44ff44"
+    },
+    "places": [
+        {
+            "name": "Frederik Meijer Gardens",
+            "notes": "Beautiful gardens and sculptures. On summer nights, they have concerts in the amphitheater. Tuesdays evenings are free.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Free",
+            "lat": 42.9818,
+            "lng": -85.5892,
+            "address": "Frederik Meijer Gardens and Sculpture Park, 1000, East Beltline Avenue Northeast, Grand Rapids, Kent County, Michigan, 49525, United States",
+            "category": "Attraction"
+        },
+        {
+            "name": "Put Putts Bar",
+            "notes": "A typical west-side bar with a relaxed atmosphere and great staff. Two patios (covered and open air) and solid food. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Small parking lot, but it's very close to the bus stop for the laker line.",
+            "address": "1148 Fulton St W, Grand Rapids, MI 49504",
+            "lat": 42.9636724,
+            "lng": -85.6960897,
+            "category": "Bar"
+        },
+        {
+            "name": "Monarchs Corner Bar",
+            "notes": "A popular live music venue with a bar. They host a variety of events and concerts.",
+            "live_music": "Yes",
+            "pool_table": "Yes",
+            "parking": "Small parking lot available, but street parking is also an option.",
+            "address": "646 Stocking Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9752637,
+            "lng": -85.6876246,
+            "category": "Bar"
+        },
+        {
+            "name": "The Pyramid Scheme",
+            "notes": "A live music venue and bar with several pinball machines. They have a variety of events and concerts.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "68 Commerce Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9615652,
+            "lng": -85.6690212,
+            "category": "Bar"
+        },
+        {
+            "name": "House Rules",
+            "notes": "A bar with a relaxed atmosphere, known for its board games and trivia nights. They have a good selection of beers and cocktails.The park across the street is a bit sketchy, but not dangerous.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "404 Ionia Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9557571,
+            "lng": -85.6698911,
+            "category": "Bar"
+        },
+        {
+            "name": "One Burbon",
+            "notes": "A typical bar with a great selection of bourbons and whiskeys. Probably the best selection in the city and fairly affordable for the quality. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "608 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9705559,
+            "lng": -85.6830626,
+            "category": "Bar"
+        },
+        {
+            "name": "Drip Drop Cocktail Room",
+            "notes": "A small coctail bar, known for its unique drinks. It can fill up quickly - or be empty, depending on the night.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "445 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9707363,
+            "lng": -85.680762,
+            "category": "Bar"
+        },
+        {
+            "name": "Founders Brewing Co.",
+            "notes": "Great craft beer and live music on certain nights. It is a very popular spot, but has a large outdoor area.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
+            "lat": 42.9584,
+            "lng": -85.6764,
+            "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States",
+            "category": "Brewery"
+        },
+        {
+            "name": "Grand Rapids Art Museum",
+            "notes": "A modern art museum with a great collection. They have free admission on Tuesdays.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
+            "lat": 42.9634,
+            "lng": -85.6702,
+            "address": "Residence Inn Grand Rapids Downtown, 40, Louis Street Northwest, Grand Rapids, Kent County, Michigan, 49503, United States",
+            "category": "Museum"
+        },
+        {
+            "name": "The Foolery",
+            "notes": "Detroit style pizza and amazing appetizers. A great place to hang out with friends. Cheap PBRs always.",
+            "address": "10 Ionia Ave NW, Grand Rapids, MI 49503",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available - but it's downtown. Best to walk. ",
+            "lat": 42.9633974,
+            "lng": -85.6701728,
+            "category": "Restaurant"
+        },
+        {
+            "name": "Barrio",
+            "notes": "A vibrant Mexican restaurant known for its tacos and tequila selection. This place gets packed before events at Van Andel Arena or the GLC",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "lat": 42.9635,
+            "lng": -85.6703,
+            "address": "Brush Studio, 11, Ionia Avenue Northwest, Grand Rapids, Kent County, Michigan, 49503, United States",
+            "category": "Restaurant"
+        }
+    ]
+}

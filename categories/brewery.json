@@ -1,0 +1,15 @@
+{
+    "color": "#ff4444",
+    "places": [
+        {
+            "name": "Founders Brewing Co.",
+            "notes": "Great craft beer and live music on certain nights. It is a very popular spot, but has a large outdoor area.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
+            "lat": 42.9584,
+            "lng": -85.6764,
+            "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+        }
+    ]
+}

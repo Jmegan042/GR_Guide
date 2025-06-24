@@ -1,0 +1,15 @@
+{
+    "color": "#ff44ff",
+    "places": [
+        {
+            "name": "Frederik Meijer Gardens",
+            "notes": "Beautiful gardens and sculptures. On summer nights, they have concerts in the amphitheater. Tuesdays evenings are free.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Free",
+            "lat": 42.9818,
+            "lng": -85.5892,
+            "address": "Frederik Meijer Gardens and Sculpture Park, 1000, East Beltline Avenue Northeast, Grand Rapids, Kent County, Michigan, 49525, United States"
+        }
+    ]
+}
