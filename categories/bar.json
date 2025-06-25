@@ -6,6 +6,8 @@
             "notes": "A typical west-side bar with a relaxed atmosphere and great staff. Two patios (covered and open air) and solid food. ",
             "live_music": "No",
             "pool_table": "No",
+            "triva_night": "Sunday",
+            "food": "Yes",
             "parking": "Small parking lot, but it's very close to the bus stop for the laker line.",
             "address": "1148 Fulton St W, Grand Rapids, MI 49504",
             "lat": 42.9636724,
@@ -16,6 +18,7 @@
             "notes": "A popular live music venue with a bar. They host a variety of events and concerts.",
             "live_music": "Yes",
             "pool_table": "Yes",
+            "food": "Yes",
             "parking": "Small parking lot available, but street parking is also an option.",
             "address": "646 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9752637,
@@ -27,6 +30,7 @@
             "live_music": "Yes",
             "pool_table": "No",
             "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "food": "No",
             "address": "68 Commerce Ave SW, Grand Rapids, MI 49503",
             "lat": 42.9615652,
             "lng": -85.6690212
@@ -37,6 +41,7 @@
             "live_music": "No",
             "pool_table": "No",
             "parking": "Street parking available.",
+            "food": "Yes",
             "address": "404 Ionia Ave SW, Grand Rapids, MI 49503",
             "lat": 42.9557571,
             "lng": -85.6698911
@@ -47,6 +52,7 @@
             "live_music": "No",
             "pool_table": "No",
             "parking": "Street parking available.",
+            "food": "Yes",
             "address": "608 Bridge St NW, Grand Rapids, MI 49504",
             "lat": 42.9705559,
             "lng": -85.6830626
@@ -57,9 +63,89 @@
             "live_music": "No",
             "pool_table": "No",
             "parking": "Street parking available.",
+            "food": "No",
             "address": "445 Bridge St NW, Grand Rapids, MI 49504",
             "lat": 42.9707363,
             "lng": -85.680762
+        },
+        {
+            "name": "Mulligan's Pub",
+            "notes": "The kind of bar where your feet stick to the floor. Cheap PBR and decent selection of bottles/cans. Filled with regulars who know each other, this place is . Monday is Trivia night which 'is vulgar and not for the faint of heart', but great fun if you can handle some crude humor. ",
+            "live_music": "Yes",
+            "pool_table": "Yes",
+            "food": "No",
+            "triva_night": "Monday",
+            "parking": "Street parking available.",
+            "address": "1518 Wealthy St SE, Grand Rapids, MI 49506",
+            "lat": 42.9554024,
+            "lng": -85.6321352
+        },
+        {
+            "name": "Fulton Street Pub",
+            "notes": "A bar with lots of open space and a nice patio. They have a decent selection of bottled beers and a few taps - but the food is the real draw. ",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Small parking lot.",
+            "triva_night": "Tuesday",
+            "food": "Yes",
+            "address": "801 Fulton St W, Grand Rapids, MI 49504",
+            "lat": 42.963602,
+            "lng": -85.687624
+        },
+        {
+            "name": "Turnsiles",
+            "notes": "Music themed bar with amazing food and live music most nights. Highly recommend the loaded fries.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Small parking lot.",
+            "food": "Yes",
+            "address": "526 Stocking Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9726121,
+            "lng": -85.6851969
+        },
+        {
+            "name": "Logan's Alley",
+            "notes": "A bar with great food, darts, and chill vibe. Right across the street from a great Coney Island resturant. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Very small parking lot, street parking available.",
+            "food": "Yes",
+            "address": "616 Michigan St NE, Grand Rapids, MI 49503",
+            "lat": 42.970037,
+            "lng": -85.653875
+        },
+        {
+            "name": "Joey's Tavern",
+            "notes": "A bar with a relaxed atmosphere, known for its board games and trivia nights. They have a good selection of beers and cocktails.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Parking lot available.",
+            "food": "Yes",
+            "address": "1125 Fulton St W, Grand Rapids, MI 49504",
+            "lat": 42.9638212,
+            "lng": -85.6955573
+        },
+        {
+            "name": "Broadway Bar",
+            "notes": "A tiny bar with only a few seats. The big draw is that it is christmas themed - like, over the top. It's an experience.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street Parking",
+            "food": "Yes",
+            "address": "740 Broadway Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9771245,
+            "lng": -85.6794025
+        },
+        {
+            "name": "Social Misfits",
+            "notes": "A cocktail bar that does elevated cocktails and WAFFLES. Yes, waffles. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "food": "Yes",
+            "address": "143 Fulton St W, Grand Rapids, MI 49503",
+            "lat": 42.963145,
+            "lng": -85.6711433
         }
     ]
 }

@@ -20,6 +20,86 @@
             "lat": 42.9635,
             "lng": -85.6703,
             "address": "Brush Studio, 11, Ionia Avenue Northwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+        },
+        {
+            "name": "Tacos El Cunado",
+            "notes": "A taco stand with AMAZING tacos, burritos, and a few other options. It has outdoor seating and is well worth the walk if you're looking for great mexican food.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available",
+            "address": "1024 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9708177,
+            "lng": -85.6934587
+        },
+        {
+            "name": "HopCat",
+            "notes": "A popular bar and restaurant known for its extensive beer selection and burgers.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "25 Ionia Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9623919,
+            "lng": -85.6705881
+        },
+        {
+            "name": "Maggie's Kitchen",
+            "notes": "A cozy spot known for its breakfast and brunch options. Recommended option: breakfast burrito.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "636 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9705972,
+            "lng": -85.6842312
+        },
+        {
+            "name": "Westsider Cafe",
+            "notes": "A cozy cafe known for its breakfast and brunch options. Recommended option: breakfast burrito.This is a solid place for breakfast - but they close early and are not open on Mondays or Tuesdays.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Small parking lot available, but street parking is also an option.",
+            "address": "1180 Walker Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9812748,
+            "lng": -85.6973208
+        },
+        {
+            "name": "Butcher's Union",
+            "notes": "A steakhouse and bar known for its meat dishes and extensive drink menu. A great place to celebrate a special occasion. Upscale and a bit pricey, but worth it for the quality.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "438 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9704809,
+            "lng": -85.6804799
+        },
+        {
+            "name": "Stella's Lounge",
+            "notes": "A popular spot known for its burgers and craft beer selection. They have a great atmosphere and are dog-friendly.",
+            "live_music": "No",
+            "pool_table": "Yes",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "53 Commerce Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.961,
+            "lng": -85.669
+        },
+        {
+            "name": "Two Scott's Barbecue",
+            "notes": "A small BBQ joint that IS THE BEST IN THE CITY HANDS DOWN NO COMPEITION END OF STORY. They have a small menu, but everything is amazing. The burnt ends go quick - usually gone by noon, but are a must-try.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "536 Leonard St NW, Grand Rapids, MI 49504",
+            "lat": 42.984929,
+            "lng": -85.681462
+        },
+        {
+            "name": "Grand Coney",
+            "notes": "A classic diner known for its coney dogs and breakfast options. A great place for a late-night bite. Open 24 Hours. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Parking lot availalbe",
+            "address": "809 Michigan St NE, Grand Rapids, MI 49503",
+            "lat": 42.9701299,
+            "lng": -85.649243
         }
     ]
 }
