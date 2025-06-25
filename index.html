@@ -39,9 +39,9 @@
     <p>
         Grand Rapids is a great city, and I've spent the last 3 years living here and learning about it. 
         There are great restaurants, activities, and bars to find yourself in - but as with all cities, 
-        you may want a guide to point things out. Here, I'd love to do that. Take what you want, and 
-        disagree where you wish - but this is JOE'S guide. I hope you enjoy it as much as I do.
+        you may want a guide to point things out. Here, I'd love to do that. I hope you enjoy your time in my city.
     </p>
+    <div id="category-filters" style="margin-bottom: 15px;"></div>
     <div id="map"></div> <!-- Map container -->
     <a href="https://github.com">Visit GitHub</a>
 
@@ -68,8 +68,12 @@
             return div;
         };
 
+        // Store markers by category
+        const markersByCategory = {};
+        let allMarkers = [];
+
         // Fetch external data and add pins
-        fetch('places.json') // External JSON file with place data
+        fetch('places.json')
             .then(response => response.json())
             .then(data => {
                 // Add category colors to legend
@@ -82,7 +86,18 @@
                         </div>`;
                 });
 
-                // Add markers
+                // Create filter checkboxes
+                const filterDiv = document.getElementById('category-filters');
+                Object.keys(data.categories).forEach(category => {
+                    filterDiv.innerHTML += `
+                        <label style="margin-right: 10px;">
+                            <input type="checkbox" class="category-filter" value="${category}" checked>
+                            ${category}
+                        </label>
+                    `;
+                });
+
+                // Add markers and store by category
                 data.places.forEach(place => {
                     const color = data.categories[place.category];
                     const markerIcon = L.divIcon({
@@ -91,9 +106,55 @@
                         iconSize: [16, 16]
                     });
 
-                    L.marker([place.lat, place.lng], { icon: markerIcon })
-                        .addTo(map)
+                    const marker = L.marker([place.lat, place.lng], { icon: markerIcon })
                         .bindPopup(`<b>${place.name}</b><br>${place.category}<br>${place.notes}`);
+
+                    if (!markersByCategory[place.category]) {
+                        markersByCategory[place.category] = [];
+                    }
+                    markersByCategory[place.category].push(marker);
+                    allMarkers.push(marker);
+                    marker.addTo(map);
+                });
+
+                // Filtering logic
+                function updateMarkers() {
+                    // Get selected categories
+                    const checked = Array.from(document.querySelectorAll('.category-filter:checked')).map(cb => cb.value);
+
+                    // Remove all markers
+                    allMarkers.forEach(marker => map.removeLayer(marker));
+
+                    // Add markers for selected categories
+                    checked.forEach(category => {
+                        if (category === "Restaurant") {
+                            // Show all restaurants
+                            (markersByCategory["Restaurant"] || []).forEach(marker => marker.addTo(map));
+                            // Also show bars with food: "Yes"
+                            (markersByCategory["Bar"] || []).forEach((marker, idx) => {
+                                const place = data.places.filter(p => p.category === "Bar")[idx];
+                                if (place.food && place.food.toLowerCase() === "yes") {
+                                    marker.addTo(map);
+                                }
+                            });
+                        } else if (category === "Bar") {
+                            // Show bars with food: "No" or no food property
+                            (markersByCategory["Bar"] || []).forEach((marker, idx) => {
+                                const place = data.places.filter(p => p.category === "Bar")[idx];
+                                if (!place.food || place.food.toLowerCase() === "no") {
+                                    marker.addTo(map);
+                                }
+                            });
+                        } else {
+                            // Default: show all in category
+                            (markersByCategory[category] || []).forEach(marker => marker.addTo(map));
+                        }
+                    });
+                }
+
+                // Listen for filter changes
+                document.querySelectorAll('.category-filter').forEach(cb => {
+                    cb.addEventListener('change', updateMarkers);
                 });
             })
             .catch(error => console.error('Error fetching place data:', error));
