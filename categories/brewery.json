@@ -1,0 +1,128 @@
+{
+    "color": "#ff4444",
+    "places": [
+        {
+            "name": "Founders Brewing Co.",
+            "notes": "Great craft beer and live music on certain nights. It is a very popular spot, but has a large outdoor area.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
+            "lat": 42.9584,
+            "lng": -85.6764,
+            "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+        },
+        {
+            "name": "Brewery Vivant",
+            "notes": "A brewery located in a former funeral home, known for its Belgian-style beers and farm-to-table food.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "lat": 42.9631,
+            "lng": -85.6722,
+            "address": "925 Cherry St SE, Grand Rapids, MI 49506"
+        },
+        {
+            "name": "The Mitten Brewing Co.",
+            "notes": "A brewery located in a former firehouse, known for its craft beers and pizza.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "527 Leonard St NW, Grand Rapids, MI 49504",
+            "lat": 42.9851679,
+            "lng": -85.6810634
+        },
+        {
+            "name": "Long Road Distillers",
+            "notes": "A distillery with a focus on craft spirits. Recommendation: try their cherry liqueur. They offer tours on Saturdays for $10 that includes a tasting - but you have to book in advance.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "537 Leonard St NW, Grand Rapids, MI 49504",
+            "lat": 42.985094,
+            "lng": -85.681452
+        },
+        {
+            "name": "City Built Brewing Company",
+            "notes": "A brewery with a focus on Latin-inspired beers and food.",
+            "live_music": "Yes",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "lat": 42.9684,
+            "lng": -85.6689,
+            "address": "820 Monroe Ave NW, Grand Rapids, MI 49503"
+        },
+        {
+            "name": "Harmony Brewing Company",
+            "notes": "A brewery known for its community-focused atmosphere and a variety of craft beers.They have a great outdoor seating area and host a euchre night on Mondays",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "lat": 42.9636,
+            "lng": -85.6725,
+            "address": "1551 Lake Dr SE, Grand Rapids, MI 49506"
+        },
+        {
+            "name": "Speciation Brewing Company",
+            "notes": "A very good brewery featuring a wide variety of SOURS, Lagers, and Pale Ales. They do not serve food, but they do allow you to bring your own.",
+            "live_music": "Yes",
+            "live_music_days": "Fridays",
+            "pool_table": "No",
+            "food": "No",
+            "trivia_night": "Wednesdays",
+            "parking": "Street parking available.",
+            "address": "928 Wealthy St SE, Grand Rapids, MI 49506",
+            "lat": 42.9550949,
+            "lng": -85.6456676
+        },
+        {
+            "name": "Atwater Brewing",
+            "notes": "Detroit-based brewery with a full kitchen, offering pub fare and a wide selection of craft beers. Spacious, with river views and a lively atmosphere.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking and nearby lots available.",
+            "address": "201 Michigan St NW, Grand Rapids, MI 49503",
+            "lat": 42.970463,
+            "lng": -85.672454
+        },
+        {
+            "name": "Perrin Brewing Company",
+            "notes": "A brewery with great beers - probably the best in the area. But it's a bit out of the way from downtown. Worth the drive if you need to run errands in the area.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Large parking lot.",
+            "lat": 42.9732,
+            "lng": -85.6721,
+            "address": "5910 Comstock Park Dr NW, Comstock Park, MI 49321"
+        },
+        {
+            "name": "New Holland Brewing - The Knickerbocker",
+            "notes": "A big brewery with some great beers and seltzers. The food is good, but can be pricey. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking only",
+            "lat": 42.9732,
+            "lng": -85.6721,
+            "address": "417 Bridge St NW, Grand Rapids, MI 49504"
+        },
+        {
+            "name": "Kusterer Brauhaus",
+            "notes": "A German-style brewery with a cozy atmosphere and a variety of beers.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "642 Bridge St NW, Grand Rapids, MI 49504",
+            "lat": 42.9705876,
+            "lng": -85.6845919
+        },
+        {
+            "name": "Rapid River Stillhouse",
+            "notes": "A distillery and brewery offering a unique selection of spirits and beers. Known for its craft cocktails and small-batch brews.",
+            "live_music": "Thursdays",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "address": "401 Stocking Ave NW, Grand Rapids, MI 49504",
+            "lat": 42.9708959,
+            "lng": -85.6844761
+        }
+    ]
+}
