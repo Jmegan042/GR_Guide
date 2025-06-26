@@ -6,12 +6,20 @@
             "notes": "A typical west-side bar with a relaxed atmosphere and great staff. Two patios (covered and open air) and solid food. ",
             "live_music": "No",
             "pool_table": "No",
-            "triva_night": "Sunday",
+            "trivia_night": "Sunday",
             "food": "Yes",
             "parking": "Small parking lot, but it's very close to the bus stop for the laker line.",
             "address": "1148 Fulton St W, Grand Rapids, MI 49504",
             "lat": 42.9636724,
-            "lng": -85.6960897
+            "lng": -85.6960897,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Sunday",
+                    "start_time": "7:00 PM",
+                    "description": "General trivia night. Team size is generally under 6 people. "
+                }
+            ]
         },
         {
             "name": "Monarchs Corner Bar",
@@ -22,7 +30,15 @@
             "parking": "Small parking lot available, but street parking is also an option.",
             "address": "646 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9752637,
-            "lng": -85.6876246
+            "lng": -85.6876246,
+            "events": [
+                {
+                    "type": "Open Mic",
+                    "day": "Monday",
+                    "start_time": "8:00 PM",
+                    "description": "A smaller open mic to a bar of good folks. Very cramped - but a great time. Singer songwriter style of open mic, but all are welcome."
+                }
+            ]
         },
         {
             "name": "The Pyramid Scheme",
@@ -72,13 +88,22 @@
             "name": "Mulligan's Pub",
             "notes": "The kind of bar where your feet stick to the floor. Cheap PBR and decent selection of bottles/cans. Filled with regulars who know each other, this place is . Monday is Trivia night which 'is vulgar and not for the faint of heart', but great fun if you can handle some crude humor. ",
             "live_music": "Yes",
+            "kereoke": "Tuesday",
             "pool_table": "Yes",
             "food": "No",
-            "triva_night": "Monday",
+            "trivia_night": "Monday",
             "parking": "Street parking available.",
             "address": "1518 Wealthy St SE, Grand Rapids, MI 49506",
             "lat": 42.9554024,
-            "lng": -85.6321352
+            "lng": -85.6321352,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Monday",
+                    "start_time": "9:00 PM",
+                    "description": "Vulgar and not for the faint of heart, but great fun if you can handle some crude humor."
+                }
+            ]
         },
         {
             "name": "Fulton Street Pub",
@@ -86,22 +111,51 @@
             "live_music": "Yes",
             "pool_table": "No",
             "parking": "Small parking lot.",
-            "triva_night": "Tuesday",
+            "trivia_night": "Tuesday",
             "food": "Yes",
             "address": "801 Fulton St W, Grand Rapids, MI 49504",
             "lat": 42.963602,
-            "lng": -85.687624
+            "lng": -85.687624,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Tuesday",
+                    "start_time": "7:30 PM",
+                    "description": "Clean trivia night with a good atmosphere. Very competititve, teams of 1-6 people. Prizes for the top 2 teams and a consolation prize for a team not in the running in the final question."
+                }
+            ]
         },
         {
             "name": "Turnsiles",
             "notes": "Music themed bar with amazing food and live music most nights. Highly recommend the loaded fries.",
             "live_music": "Yes",
+            "open_mic": "Monday",
             "pool_table": "No",
             "parking": "Small parking lot.",
             "food": "Yes",
             "address": "526 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9726121,
-            "lng": -85.6851969
+            "lng": -85.6851969,
+            "events": [
+                {
+                    "type": "Open Mic",
+                    "day": "Monday",
+                    "start_time": "8:00 PM",
+                    "description": "A great open mic for singer-songwriters."
+                },
+                {
+                    "type": "Open Mic",
+                    "day": "Thursday",
+                    "start_time": "8:00 PM",
+                    "description": "A great open mic for singer-songwriters and bands."
+                },
+                {
+                    "type": "Music Bingo",
+                    "day": "Thursday",
+                    "start_time": "6:30 PM",
+                    "description": "How well do you know that tune? Music Bingo is a fun twist where they play the song and you mark it off on a bingo card. This one's easy to play, but hard to beat me at."
+                }
+            ]
         },
         {
             "name": "Logan's Alley",

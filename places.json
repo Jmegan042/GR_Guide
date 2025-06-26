@@ -15,6 +15,7 @@
             "lat": 42.9818,
             "lng": -85.5892,
             "address": "Frederik Meijer Gardens and Sculpture Park, 1000, East Beltline Avenue Northeast, Grand Rapids, Kent County, Michigan, 49525, United States",
+            "website": "https://www.meijergardens.org/",
             "category": "Attraction"
         },
         {
@@ -26,6 +27,7 @@
             "address": "1300 West Fulton Street, Grand Rapids, MI 49504",
             "lat": 42.963785,
             "lng": -85.70012,
+            "website": "https://www.jbzoo.org/",
             "category": "Attraction"
         },
         {
@@ -37,6 +39,7 @@
             "lat": 42.9634,
             "lng": -85.6702,
             "address": "101 Monroe Center St NW, Grand Rapids, MI 49503",
+            "website": "https://www.artmuseumgr.org/",
             "category": "Attraction"
         },
         {
@@ -48,6 +51,7 @@
             "lat": 42.9643,
             "lng": -85.6721,
             "address": "272 Pearl St NW, Grand Rapids, MI 49504",
+            "website": "https://www.grpm.org/",
             "category": "Attraction"
         },
         {
@@ -59,6 +63,7 @@
             "address": "200 Lyon St NW, Grand Rapids, MI 49503",
             "lat": 42.9670134,
             "lng": -85.6740893,
+            "website": "https://www.woodrowsduckpin.com/",
             "category": "Attraction"
         },
         {
@@ -70,6 +75,7 @@
             "address": "647 Monroe Ave NW, Grand Rapids, MI 49503",
             "lat": 42.9743246,
             "lng": -85.6725283,
+            "website": "",
             "category": "Attraction"
         },
         {
@@ -81,6 +87,45 @@
             "address": "434 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.9848474,
             "lng": -85.6790681,
+            "website": "https://www.moreorlessna.com/",
+            "category": "Attraction"
+        },
+        {
+            "name": "Big Mini Putt Club",
+            "notes": "A fun indoor mini golf course with a variety of holes. It's a great place for groups of 2-5 to chill out.",
+            "live_music": "No",
+            "pool_table": "No",
+            "food": "No",
+            "parking": "Street parking available.",
+            "address": "70 Ionia Ave SW, Grand Rapids, MI 49503",
+            "lat": 42.9611758,
+            "lng": -85.6699153,
+            "website": "https://bigminiputtclub.com/",
+            "category": "Attraction"
+        },
+        {
+            "name": "Gimme's Par and Grill",
+            "notes": "An indoor golf simulator and grill. I have not been here, but it comes highly recommended by a friend.",
+            "live_music": "No",
+            "pool_table": "No",
+            "food": "Yes",
+            "parking": "Street parking available.",
+            "address": "45 Ottawa Ave NW, Grand Rapids, MI 49503",
+            "lat": 42.9643305,
+            "lng": -85.6712132,
+            "website": "https://www.gimmesgr.com/",
+            "category": "Attraction"
+        },
+        {
+            "name": "Grand Rapids Children's Museum",
+            "notes": "A fun and interactive museum for kids. It's a great place to take children and let them explore and learn.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "11 Sheldon Ave NE, Grand Rapids, MI 49503",
+            "lat": 42.9638781,
+            "lng": -85.6672153,
+            "website": "https://www.grcm.org/",
             "category": "Attraction"
         },
         {
@@ -88,12 +133,20 @@
             "notes": "A typical west-side bar with a relaxed atmosphere and great staff. Two patios (covered and open air) and solid food. ",
             "live_music": "No",
             "pool_table": "No",
-            "triva_night": "Sunday",
+            "trivia_night": "Sunday",
             "food": "Yes",
             "parking": "Small parking lot, but it's very close to the bus stop for the laker line.",
             "address": "1148 Fulton St W, Grand Rapids, MI 49504",
             "lat": 42.9636724,
             "lng": -85.6960897,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Sunday",
+                    "start_time": "7:00 PM",
+                    "description": "General trivia night. Team size is generally under 6 people. "
+                }
+            ],
             "category": "Bar"
         },
         {
@@ -106,6 +159,14 @@
             "address": "646 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9752637,
             "lng": -85.6876246,
+            "events": [
+                {
+                    "type": "Open Mic",
+                    "day": "Monday",
+                    "start_time": "8:00 PM",
+                    "description": "A smaller open mic to a bar of good folks. Very cramped - but a great time. Singer songwriter style of open mic, but all are welcome."
+                }
+            ],
             "category": "Bar"
         },
         {
@@ -160,13 +221,22 @@
             "name": "Mulligan's Pub",
             "notes": "The kind of bar where your feet stick to the floor. Cheap PBR and decent selection of bottles/cans. Filled with regulars who know each other, this place is . Monday is Trivia night which 'is vulgar and not for the faint of heart', but great fun if you can handle some crude humor. ",
             "live_music": "Yes",
+            "kereoke": "Tuesday",
             "pool_table": "Yes",
             "food": "No",
-            "triva_night": "Monday",
+            "trivia_night": "Monday",
             "parking": "Street parking available.",
             "address": "1518 Wealthy St SE, Grand Rapids, MI 49506",
             "lat": 42.9554024,
             "lng": -85.6321352,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Monday",
+                    "start_time": "9:00 PM",
+                    "description": "Vulgar and not for the faint of heart, but great fun if you can handle some crude humor."
+                }
+            ],
             "category": "Bar"
         },
         {
@@ -175,23 +245,52 @@
             "live_music": "Yes",
             "pool_table": "No",
             "parking": "Small parking lot.",
-            "triva_night": "Tuesday",
+            "trivia_night": "Tuesday",
             "food": "Yes",
             "address": "801 Fulton St W, Grand Rapids, MI 49504",
             "lat": 42.963602,
             "lng": -85.687624,
+            "events": [
+                {
+                    "type": "Trivia Night",
+                    "day": "Tuesday",
+                    "start_time": "7:30 PM",
+                    "description": "Clean trivia night with a good atmosphere. Very competititve, teams of 1-6 people. Prizes for the top 2 teams and a consolation prize for a team not in the running in the final question."
+                }
+            ],
             "category": "Bar"
         },
         {
             "name": "Turnsiles",
             "notes": "Music themed bar with amazing food and live music most nights. Highly recommend the loaded fries.",
             "live_music": "Yes",
+            "open_mic": "Monday",
             "pool_table": "No",
             "parking": "Small parking lot.",
             "food": "Yes",
             "address": "526 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9726121,
             "lng": -85.6851969,
+            "events": [
+                {
+                    "type": "Open Mic",
+                    "day": "Monday",
+                    "start_time": "8:00 PM",
+                    "description": "A great open mic for singer-songwriters."
+                },
+                {
+                    "type": "Open Mic",
+                    "day": "Thursday",
+                    "start_time": "8:00 PM",
+                    "description": "A great open mic for singer-songwriters and bands."
+                },
+                {
+                    "type": "Music Bingo",
+                    "day": "Thursday",
+                    "start_time": "6:30 PM",
+                    "description": "How well do you know that tune? Music Bingo is a fun twist where they play the song and you mark it off on a bingo card. This one's easy to play, but hard to beat me at."
+                }
+            ],
             "category": "Bar"
         },
         {
@@ -231,6 +330,18 @@
             "category": "Bar"
         },
         {
+            "name": "Social Misfits",
+            "notes": "A cocktail bar that does elevated cocktails and WAFFLES. Yes, waffles. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available.",
+            "food": "Yes",
+            "address": "143 Fulton St W, Grand Rapids, MI 49503",
+            "lat": 42.963145,
+            "lng": -85.6711433,
+            "category": "Bar"
+        },
+        {
             "name": "Founders Brewing Co.",
             "notes": "Great craft beer and live music on certain nights. It is a very popular spot, but has a large outdoor area.",
             "live_music": "Yes",
@@ -239,6 +350,8 @@
             "lat": 42.9584,
             "lng": -85.6764,
             "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States",
+            "untappd": "https://untappd.com/foundersbrewing",
+            "website": "https://foundersbrewing.com/",
             "category": "Brewery"
         },
         {
@@ -250,17 +363,21 @@
             "lat": 42.9631,
             "lng": -85.6722,
             "address": "925 Cherry St SE, Grand Rapids, MI 49506",
+            "untappd": "https://untappd.com/breweryvivant",
+            "website": "https://breweryvivant.com/",
             "category": "Brewery"
         },
         {
             "name": "The Mitten Brewing Co.",
-            "notes": "A brewery located in a former firehouse, known for its craft beers and pizza.",
+            "notes": "A brewery located in a former firehouse, known for its craft beers and pizza. Recommendation: Get a pizza flight. You get to try many types of pizza and it feeds 3 people at a minimum.",
             "live_music": "No",
             "pool_table": "No",
             "parking": "Street parking available.",
             "address": "527 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.9851679,
             "lng": -85.6810634,
+            "untappd": "https://untappd.com/MittenBrewingCo",
+            "website": "https://mittenbrewing.com/",
             "category": "Brewery"
         },
         {
@@ -272,6 +389,8 @@
             "address": "537 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.985094,
             "lng": -85.681452,
+            "untappd": "https://untappd.com/w/long-road-distillers/529495",
+            "website": "https://longroaddistillers.com/",
             "category": "Brewery"
         },
         {
@@ -283,6 +402,8 @@
             "lat": 42.9684,
             "lng": -85.6689,
             "address": "820 Monroe Ave NW, Grand Rapids, MI 49503",
+            "untappd": "https://untappd.com/CityBuiltBrewing",
+            "website": "https://citybuiltbrewing.com/",
             "category": "Brewery"
         },
         {
@@ -294,6 +415,8 @@
             "lat": 42.9636,
             "lng": -85.6725,
             "address": "1551 Lake Dr SE, Grand Rapids, MI 49506",
+            "untappd": "https://untappd.com/HarmonyBrewingCompany",
+            "website": "https://harmonybeer.com/",
             "category": "Brewery"
         },
         {
@@ -308,6 +431,8 @@
             "address": "928 Wealthy St SE, Grand Rapids, MI 49506",
             "lat": 42.9550949,
             "lng": -85.6456676,
+            "untappd": "https://untappd.com/SpeciationAles",
+            "website": "https://speciationartisanales.com/",
             "category": "Brewery"
         },
         {
@@ -319,6 +444,8 @@
             "address": "201 Michigan St NW, Grand Rapids, MI 49503",
             "lat": 42.970463,
             "lng": -85.672454,
+            "untappd": "https://untappd.com/v/atwater-in-gr/5488885",
+            "website": "https://atwaterbeer.com/",
             "category": "Brewery"
         },
         {
@@ -330,6 +457,8 @@
             "lat": 42.9732,
             "lng": -85.6721,
             "address": "5910 Comstock Park Dr NW, Comstock Park, MI 49321",
+            "untappd": "https://untappd.com/PerrinBrewingCo",
+            "website": "https://perrinbrewing.com/",
             "category": "Brewery"
         },
         {
@@ -341,6 +470,8 @@
             "lat": 42.9732,
             "lng": -85.6721,
             "address": "417 Bridge St NW, Grand Rapids, MI 49504",
+            "untappd": "https://untappd.com/v/new-holland-brewing-grand-rapids/5246983",
+            "website": "https://newhollandbrew.com/knickerbocker/",
             "category": "Brewery"
         },
         {
@@ -352,6 +483,8 @@
             "address": "642 Bridge St NW, Grand Rapids, MI 49504",
             "lat": 42.9705876,
             "lng": -85.6845919,
+            "untappd": "https://untappd.com/GRBrauhaus",
+            "website": "https://grbrauhaus.com/",
             "category": "Brewery"
         },
         {
@@ -363,6 +496,8 @@
             "address": "401 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9708959,
             "lng": -85.6844761,
+            "untappd": "https://untappd.com/w/rapid-river-stillhouse/567874",
+            "website": "https://rapidriverstillhouse.com/",
             "category": "Brewery"
         },
         {
@@ -451,6 +586,28 @@
             "address": "53 Commerce Ave SW, Grand Rapids, MI 49503",
             "lat": 42.961,
             "lng": -85.669,
+            "category": "Restaurant"
+        },
+        {
+            "name": "Two Scott's Barbecue",
+            "notes": "A small BBQ joint that IS THE BEST IN THE CITY HANDS DOWN NO COMPEITION END OF STORY. They have a small menu, but everything is amazing. The burnt ends go quick - usually gone by noon, but are a must-try.",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Street parking available, but it's best to walk if you're downtown.",
+            "address": "536 Leonard St NW, Grand Rapids, MI 49504",
+            "lat": 42.984929,
+            "lng": -85.681462,
+            "category": "Restaurant"
+        },
+        {
+            "name": "Grand Coney",
+            "notes": "A classic diner known for its coney dogs and breakfast options. A great place for a late-night bite. Open 24 Hours. ",
+            "live_music": "No",
+            "pool_table": "No",
+            "parking": "Parking lot availalbe",
+            "address": "809 Michigan St NE, Grand Rapids, MI 49503",
+            "lat": 42.9701299,
+            "lng": -85.649243,
             "category": "Restaurant"
         }
     ]

@@ -9,7 +9,9 @@
             "parking": "Street parking available, and a parking lot is nearby that can validate 1 hour of parking.",
             "lat": 42.9584,
             "lng": -85.6764,
-            "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States"
+            "address": "Market Avenue Southwest, Grand Rapids, Kent County, Michigan, 49503, United States",
+            "untappd": "https://untappd.com/foundersbrewing",
+            "website": "https://foundersbrewing.com/"
         },
         {
             "name": "Brewery Vivant",
@@ -19,17 +21,21 @@
             "parking": "Street parking available.",
             "lat": 42.9631,
             "lng": -85.6722,
-            "address": "925 Cherry St SE, Grand Rapids, MI 49506"
+            "address": "925 Cherry St SE, Grand Rapids, MI 49506",
+            "untappd": "https://untappd.com/breweryvivant",
+            "website": "https://breweryvivant.com/"
         },
         {
             "name": "The Mitten Brewing Co.",
-            "notes": "A brewery located in a former firehouse, known for its craft beers and pizza.",
+            "notes": "A brewery located in a former firehouse, known for its craft beers and pizza. Recommendation: Get a pizza flight. You get to try many types of pizza and it feeds 3 people at a minimum.",
             "live_music": "No",
             "pool_table": "No",
             "parking": "Street parking available.",
             "address": "527 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.9851679,
-            "lng": -85.6810634
+            "lng": -85.6810634,
+            "untappd": "https://untappd.com/MittenBrewingCo",
+            "website": "https://mittenbrewing.com/"
         },
         {
             "name": "Long Road Distillers",
@@ -39,7 +45,9 @@
             "parking": "Street parking available.",
             "address": "537 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.985094,
-            "lng": -85.681452
+            "lng": -85.681452,
+            "untappd": "https://untappd.com/w/long-road-distillers/529495",
+            "website": "https://longroaddistillers.com/"
         },
         {
             "name": "City Built Brewing Company",
@@ -49,7 +57,9 @@
             "parking": "Street parking available.",
             "lat": 42.9684,
             "lng": -85.6689,
-            "address": "820 Monroe Ave NW, Grand Rapids, MI 49503"
+            "address": "820 Monroe Ave NW, Grand Rapids, MI 49503",
+            "untappd": "https://untappd.com/CityBuiltBrewing",
+            "website": "https://citybuiltbrewing.com/"
         },
         {
             "name": "Harmony Brewing Company",
@@ -59,7 +69,9 @@
             "parking": "Street parking available.",
             "lat": 42.9636,
             "lng": -85.6725,
-            "address": "1551 Lake Dr SE, Grand Rapids, MI 49506"
+            "address": "1551 Lake Dr SE, Grand Rapids, MI 49506",
+            "untappd": "https://untappd.com/HarmonyBrewingCompany",
+            "website": "https://harmonybeer.com/"
         },
         {
             "name": "Speciation Brewing Company",
@@ -72,7 +84,9 @@
             "parking": "Street parking available.",
             "address": "928 Wealthy St SE, Grand Rapids, MI 49506",
             "lat": 42.9550949,
-            "lng": -85.6456676
+            "lng": -85.6456676,
+            "untappd": "https://untappd.com/SpeciationAles",
+            "website": "https://speciationartisanales.com/"
         },
         {
             "name": "Atwater Brewing",
@@ -82,7 +96,9 @@
             "parking": "Street parking and nearby lots available.",
             "address": "201 Michigan St NW, Grand Rapids, MI 49503",
             "lat": 42.970463,
-            "lng": -85.672454
+            "lng": -85.672454,
+            "untappd": "https://untappd.com/v/atwater-in-gr/5488885",
+            "website": "https://atwaterbeer.com/"
         },
         {
             "name": "Perrin Brewing Company",
@@ -92,7 +108,9 @@
             "parking": "Large parking lot.",
             "lat": 42.9732,
             "lng": -85.6721,
-            "address": "5910 Comstock Park Dr NW, Comstock Park, MI 49321"
+            "address": "5910 Comstock Park Dr NW, Comstock Park, MI 49321",
+            "untappd": "https://untappd.com/PerrinBrewingCo",
+            "website": "https://perrinbrewing.com/"
         },
         {
             "name": "New Holland Brewing - The Knickerbocker",
@@ -102,7 +120,9 @@
             "parking": "Street parking only",
             "lat": 42.9732,
             "lng": -85.6721,
-            "address": "417 Bridge St NW, Grand Rapids, MI 49504"
+            "address": "417 Bridge St NW, Grand Rapids, MI 49504",
+            "untappd": "https://untappd.com/v/new-holland-brewing-grand-rapids/5246983",
+            "website": "https://newhollandbrew.com/knickerbocker/"
         },
         {
             "name": "Kusterer Brauhaus",
@@ -112,7 +132,9 @@
             "parking": "Street parking available.",
             "address": "642 Bridge St NW, Grand Rapids, MI 49504",
             "lat": 42.9705876,
-            "lng": -85.6845919
+            "lng": -85.6845919,
+            "untappd": "https://untappd.com/GRBrauhaus",
+            "website": "https://grbrauhaus.com/"
         },
         {
             "name": "Rapid River Stillhouse",
@@ -122,7 +144,9 @@
             "parking": "Street parking available.",
             "address": "401 Stocking Ave NW, Grand Rapids, MI 49504",
             "lat": 42.9708959,
-            "lng": -85.6844761
+            "lng": -85.6844761,
+            "untappd": "https://untappd.com/w/rapid-river-stillhouse/567874",
+            "website": "https://rapidriverstillhouse.com/"
         }
     ]
 }

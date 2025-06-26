@@ -58,8 +58,9 @@ def get_address_from_coordinates(lat, lng):
         return None
 
 def update_category_files():
-    # Get all category JSON files
-    category_dir = Path("categories")
+    # Get all category JSON files (relative to the script's parent directory)
+    base_dir = Path(__file__).resolve().parent.parent
+    category_dir = base_dir / "categories"
     if not category_dir.exists():
         print("Categories directory not found!")
         return
@@ -73,11 +74,11 @@ def update_category_files():
         
         # Process each place
         for place in data["places"]:
-            print(f"\nChecking {place['name']}...")
+            print(f"\nChecking {place.get('name', '[Unnamed]')}...")
             
             # Case 1: No coordinates but has address
             if ("lat" not in place or "lng" not in place) and "address" in place:
-                print(f"Looking up coordinates for {place['name']}...")
+                print(f"Looking up coordinates for {place.get('name', '[Unnamed]')}...")
                 coords = get_coordinates(place["address"])
                 if coords:
                     place["lat"] = coords["lat"]
@@ -86,7 +87,7 @@ def update_category_files():
             
             # Case 2: Has coordinates but no address
             elif "lat" in place and "lng" in place and "address" not in place:
-                print(f"Looking up address for {place['name']}...")
+                print(f"Looking up address for {place.get('name', '[Unnamed]')}...")
                 address = get_address_from_coordinates(place["lat"], place["lng"])
                 if address:
                     place["address"] = address

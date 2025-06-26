@@ -12,8 +12,9 @@ def combine_categories():
         "places": []
     }
     
-    # Get all JSON files from the categories directory
-    category_dir = Path("categories")
+    # Get all JSON files from the categories directory (relative to project root)
+    base_dir = Path(__file__).resolve().parent.parent
+    category_dir = base_dir / "categories"
     if not category_dir.exists():
         print("Categories directory not found!")
         return
@@ -43,9 +44,10 @@ def combine_categories():
         except KeyError as e:
             print(f"Missing key in {category_file.name}: {str(e)}")
     
-    # Write combined data to places.json
+    # Write combined data to places.json in the project root
     try:
-        with open('places.json', 'w') as f:
+        places_path = base_dir / 'places.json'
+        with open(places_path, 'w') as f:
             json.dump(combined_data, f, indent=4)
         print(f"\nCreated places.json with:")
         print(f"- {len(combined_data['categories'])} categories")

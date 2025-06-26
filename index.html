@@ -164,24 +164,109 @@
             .then(response => response.json())
             .then(data => {
                 data.neighborhoods.forEach(hood => {
-                    // Convert coordinates array to polygon points
-                    const polygonPoints = hood.coordinates.map(coord => [coord[0], coord[1]]);
-                    
-                    // Create and style the polygon
-                    const polygon = L.polygon(polygonPoints, {
+                    // Each hood.coordinates is [ [ [lat, lng], ... ] ]
+                    L.polygon(hood.coordinates, {
                         color: hood.color,
                         fillColor: hood.color,
                         fillOpacity: hood.opacity,
                         weight: 2
-                    }).addTo(map);
-
-                    // Add a popup with the neighborhood name
-                    polygon.bindPopup(hood.name);
+                    })
+                    .addTo(map)
+                    .bindPopup(`<b>${hood.name}</b>`);
                 });
             })
             .catch(error => console.error('Error loading neighborhoods:', error));
 
+        // Geolocation feature
+        // if ("geolocation" in navigator) {
+        //     navigator.geolocation.getCurrentPosition(
+        //         function(position) {
+        //             const userLat = position.coords.latitude;
+        //             const userLng = position.coords.longitude;
+        //             const userMarker = L.marker([userLat, userLng], {
+        //                 icon: L.icon({
+        //                     iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+        //                     iconSize: [25, 41],
+        //                     iconAnchor: [12, 41],
+        //                     popupAnchor: [1, -34],
+        //                     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+        //                     shadowSize: [41, 41]
+        //                 })
+        //             }).addTo(map)
+        //               .bindPopup("You are here!")
+        //               .openPopup();
+        //             // Optionally center the map on the user's location:
+        //             // map.setView([userLat, userLng], 14);
+        //         },
+        //         function(error) {
+        //             console.warn("Geolocation error:", error);
+        //         }
+        //     );
+        // } else {
+        //     console.warn("Geolocation is not available in this browser.");
+        // }
+
         legend.addTo(map);
+    </script>
+
+    <div id="calendar" style="margin: 30px auto; max-width: 600px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px;">
+        <h2 style="color:#333;">This Week's Events</h2>
+        <div id="calendar-events"></div>
+    </div>
+
+    <script>
+        // Days of the week for display
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        // Fetch events from places.json and populate the calendar
+        fetch('places.json')
+            .then(response => response.json())
+            .then(data => {
+                // Collect events by day
+                const eventsByDay = {};
+                daysOfWeek.forEach(day => eventsByDay[day] = []);
+
+                data.places.forEach(place => {
+                    // Gather all events for this place
+                    let allEvents = [];
+
+                    // Add events from the events array if present
+                    if (Array.isArray(place.events)) {
+                        allEvents = allEvents.concat(place.events);
+                    }
+
+                    // Add all events to the appropriate day
+                    allEvents.forEach(ev => {
+                        if (ev.day && daysOfWeek.includes(ev.day)) {
+                            eventsByDay[ev.day].push({
+                                type: ev.type || "Event",
+                                name: place.name,
+                                category: place.category,
+                                description: ev.description || "",
+                                start_time: ev.start_time || ""
+                            });
+                        }
+                    });
+                });
+
+                // Build the calendar HTML
+                let html = "";
+                daysOfWeek.forEach(day => {
+                    if (eventsByDay[day].length > 0) {
+                        html += `<h3 style="margin-bottom:5px;">${day}</h3><ul style="margin-top:0;">`;
+                        eventsByDay[day].forEach(event => {
+                            html += `<li><b>${event.type}:</b> ${event.name} <span style="color:#888;">(${event.category})</span>${event.start_time ? " <b>@</b> " + event.start_time : ""}${event.description ? " – " + event.description : ""}</li>`;
+                        });
+                        html += "</ul>";
+                    }
+                });
+                if (!html) html = "<p>No scheduled events this week.</p>";
+                document.getElementById("calendar-events").innerHTML = html;
+            })
+            .catch(error => {
+                document.getElementById("calendar-events").innerHTML = "<p>Error loading events.</p>";
+                console.error('Error fetching events:', error);
+            });
     </script>
 </body>
 </html>

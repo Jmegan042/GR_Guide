@@ -9,7 +9,8 @@
             "parking": "Free",
             "lat": 42.9818,
             "lng": -85.5892,
-            "address": "Frederik Meijer Gardens and Sculpture Park, 1000, East Beltline Avenue Northeast, Grand Rapids, Kent County, Michigan, 49525, United States"
+            "address": "Frederik Meijer Gardens and Sculpture Park, 1000, East Beltline Avenue Northeast, Grand Rapids, Kent County, Michigan, 49525, United States",
+            "website": "https://www.meijergardens.org/"
         },
         {
             "name": "John Ball Zoo",
@@ -19,7 +20,8 @@
             "parking": "Free - Huge lot with plenty of space. ",
             "address": "1300 West Fulton Street, Grand Rapids, MI 49504",
             "lat": 42.963785,
-            "lng": -85.70012
+            "lng": -85.70012,
+            "website": "https://www.jbzoo.org/"
         },
         {
             "name": "Grand Rapids Art Museum",
@@ -29,7 +31,8 @@
             "parking": "Street parking available, but it's best to walk if you're downtown.",
             "lat": 42.9634,
             "lng": -85.6702,
-            "address": "101 Monroe Center St NW, Grand Rapids, MI 49503"
+            "address": "101 Monroe Center St NW, Grand Rapids, MI 49503",
+            "website": "https://www.artmuseumgr.org/"
         },
         {
             "name": "Grand Rapids Public Museum",
@@ -39,7 +42,8 @@
             "parking": "Street parking available, but it's best to walk if you're downtown.",
             "lat": 42.9643,
             "lng": -85.6721,
-            "address": "272 Pearl St NW, Grand Rapids, MI 49504"
+            "address": "272 Pearl St NW, Grand Rapids, MI 49504",
+            "website": "https://www.grpm.org/"
         },
         {
             "name": "Woodrows Duckpin Bowling",
@@ -49,7 +53,8 @@
             "parking": "Just walk - it's in the hotel!",
             "address": "200 Lyon St NW, Grand Rapids, MI 49503",
             "lat": 42.9670134,
-            "lng": -85.6740893
+            "lng": -85.6740893,
+            "website": "https://www.woodrowsduckpin.com/"
         },
         {
             "name": "Sixth Street Park",
@@ -59,7 +64,8 @@
             "parking": "A parking lot is available, but it's best to walk if you're downtown.",
             "address": "647 Monroe Ave NW, Grand Rapids, MI 49503",
             "lat": 42.9743246,
-            "lng": -85.6725283
+            "lng": -85.6725283,
+            "website": ""
         },
         {
             "name": "More or Less - alcohol-free bottle shop",
@@ -69,7 +75,8 @@
             "parking": "Street parking available.",
             "address": "434 Leonard St NW, Grand Rapids, MI 49504",
             "lat": 42.9848474,
-            "lng": -85.6790681
+            "lng": -85.6790681,
+            "website": "https://www.moreorlessna.com/"
         },
         {
             "name": "Big Mini Putt Club",
@@ -80,7 +87,8 @@
             "parking": "Street parking available.",
             "address": "70 Ionia Ave SW, Grand Rapids, MI 49503",
             "lat": 42.9611758,
-            "lng": -85.6699153
+            "lng": -85.6699153,
+            "website": "https://bigminiputtclub.com/"
         },
         {
             "name": "Gimme's Par and Grill",
@@ -91,7 +99,8 @@
             "parking": "Street parking available.",
             "address": "45 Ottawa Ave NW, Grand Rapids, MI 49503",
             "lat": 42.9643305,
-            "lng": -85.6712132
+            "lng": -85.6712132,
+            "website": "https://www.gimmesgr.com/"
         },
         {
             "name": "Grand Rapids Children's Museum",
@@ -101,7 +110,8 @@
             "parking": "Street parking available, but it's best to walk if you're downtown.",
             "address": "11 Sheldon Ave NE, Grand Rapids, MI 49503",
             "lat": 42.9638781,
-            "lng": -85.6672153
+            "lng": -85.6672153,
+            "website": "https://www.grcm.org/"
         }
     ]
 }
